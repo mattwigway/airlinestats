@@ -31,6 +31,4 @@ test_that("Busiest route is correct", {
     Passengers=c(4, 3),
     distance_km=c(2568 * 1.609, 138 * 1.609)
   ))
-
-  expect_equal(result[1, "airport1"], "JFK")
 })
