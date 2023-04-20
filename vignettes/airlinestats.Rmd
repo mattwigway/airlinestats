@@ -1,0 +1,28 @@
+---
+title: "Airline statistics"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Airline statistics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(airlinestats)
+```
+
+# Computing airline statistics
+
+This package allows computing airline statistics.
+
+```{r}
+data = readr::read_csv(system.file("extdata", "passengers.csv", package="airlinestats"))
+busiest_routes(data, from, to)
+```
