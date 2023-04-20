@@ -1,3 +1,16 @@
+#' Load DB1B data
+#'
+#' Load and join DB1B data with carrier and city names.
+#'
+#' Loads DB1B dataset, and joins in origin and destination city as well as ticketing and
+#' operating carrier names
+#'
+#' @param datafile path to file with DB1B data
+#' @param cityfile path to file with city data
+#' @param carrierfile path to data with carrier names
+#'
+#' @returns joined DB1B data
+#'
 #' @export
 load_data = function (datafile, cityfile, carrierfile) {
   # first, we need to load the data
